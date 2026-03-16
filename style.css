@@ -5,15 +5,15 @@
 }
 
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --success-color: #28a745;
-    --danger-color: #dc3545;
-    --warning-color: #ffc107;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-    --text-color: #333;
-    --border-color: #dee2e6;
+
+--navy:#0B1F3B;
+--gold:#D4AF37;
+--light:#F8FAFC;
+--dark:#111827;
+
+--text:#E5E7EB;
+--card:#122A4D;
+
 }
 
 html {
@@ -34,37 +34,23 @@ body {
 }
 
 /* Navbar */
-.navbar {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.navbar{
+background:#0B1F3B;
+padding:18px 0;
+border-bottom:1px solid #1E3A63;
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-logo{
+height:38px;
 }
 
-.nav-brand h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
+.nav-links a{
+color:#E5E7EB;
+font-weight:600;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s;
+.nav-links a:hover{
+color:#D4AF37;
 }
 
 .nav-links a:hover,
@@ -74,17 +60,51 @@ body {
 }
 
 /* Hero Section */
-.hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #0056b3 100%);
-    color: white;
-    padding: 6rem 0;
-    text-align: center;
+
+.hero{
+background:#0B1F3B;
+color:white;
+padding:100px 0;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    animation: slideInDown 0.6s ease-out;
+.hero-flex{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+}
+
+.hero-left{
+max-width:520px;
+}
+
+.hero-logo{
+width:80px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:800;
+letter-spacing:1px;
+color:#D4AF37;
+}
+
+.tagline{
+font-size:26px;
+margin:10px 0 20px;
+color:white;
+}
+
+.hero-text{
+color:#C7D2E2;
+line-height:1.7;
+margin-bottom:30px;
+}
+
+.hero-image{
+width:520px;
+border-radius:20px;
 }
 
 .hero p {
