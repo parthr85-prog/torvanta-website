@@ -377,4 +377,30 @@ display:none;
 font-size:28px;
 }
 
+.dropdown-menu{
+display:none;
+position:absolute;
+background:#122A4D;
+padding:10px;
+list-style:none;
+border-radius:8px;
+}
+
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+
+.dropdown-menu li{
+padding:6px 10px;
+}
+
+.dropdown-menu a{
+color:#E5E7EB;
+text-decoration:none;
+}
+
+.dropdown-menu a:hover{
+color:#D4AF37;
+}
+
 }
